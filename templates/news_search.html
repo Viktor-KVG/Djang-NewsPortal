@@ -1,0 +1,16 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<h1>Новости</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Search" />
+    <label for="start">Start date:</label>
+
+    <input type="date" id="start" name="trip-start"
+       value="2023-02-22"
+       min="2023-02-22" max="2023-03-08"/>
+</form>
+{% endblock content %}
