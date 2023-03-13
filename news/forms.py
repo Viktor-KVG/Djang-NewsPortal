@@ -8,6 +8,7 @@ class NewsForm(forms.ModelForm):
        fields = [
            'post_author',
            'title_news',
+           'text_news',
            'choice_category',
        ]
 
