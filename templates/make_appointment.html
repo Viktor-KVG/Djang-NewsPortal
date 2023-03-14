@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,16 +7,16 @@
     <title>Make an appointment</title>
 </head>
 <body>
-    <h1>Make an appointment</h1>
+    <h1>Записаться на приём</h1>
 
     <form action ="{% url 'appointments'%}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <label for='client_name'> Your name</label>
-        <input type="text" name="message" id="client_name"><br>
-        <label for="message" id="message"> Short description of your issue id="message"</label>
-        <input type="text" name="message"><br>
-        <label for="date"> Choose time </label>
-        <input type="date" name="date" id="date"><br>
+        <label for="client_name"> Ваше имя:</label>
+        <input type="text"  name="client_name" id="client_name"> <br>
+        <label for="message" id="message" > Короткое описание вашего случая:</label>
+        <input type="text" name="message"  ><br>
+        <label for="date"> Выберите дату: </label>
+        <input type="date" name="date" id="date" required="true"><br>
         <input type="submit">
     </form>
 </body>
