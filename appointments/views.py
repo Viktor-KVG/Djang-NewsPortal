@@ -7,6 +7,8 @@ from django.template.loader import render_to_string
 from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render, reverse, redirect
 
+
+
 class AppointmentView(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'make_appointment.html', {})

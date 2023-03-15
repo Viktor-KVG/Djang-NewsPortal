@@ -6,6 +6,7 @@ from allauth.account.forms import SignupForm
 from django.contrib.auth.models import Group
 
 
+
 class BaseRegisterForm(UserCreationForm):
     email = forms.EmailField(label = "Email")
     first_name = forms.CharField(label = "Имя")
@@ -24,6 +25,6 @@ class BasicSignupForm(SignupForm):
 
     def save(self, request):
         user = super(BasicSignupForm, self).save(request)
-        basic_group = Group.objects.get(name='basic')
+        basic_group = Group.objects.get(name='Common')
         basic_group.user_set.add(user)
         return user

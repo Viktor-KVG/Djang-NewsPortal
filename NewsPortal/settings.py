@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'news',
     'protect',
     'sign',
-    'appointments',
+    'appointments.apps.AppointmentsConfig',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -118,7 +118,7 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
