@@ -30,6 +30,11 @@ class Category(models.Model):
     ]
 
     type_positions = models.CharField(max_length=2, choices=TYPES_CATEGORY, default=policy, unique = True)
+    name = models.CharField(max_length=65, unique = True)
+    subscribers = models.ManyToManyField(User, related_name= 'categories')
+
+    def __str__(self):
+        return self.name
 
 class Post(models.Model):
 
@@ -44,7 +49,7 @@ class Post(models.Model):
     post_author = models.ForeignKey('Author', on_delete=models.CASCADE)
     choice_category = models.CharField(max_length=3, choices=TYPES, default=news)
     time_in = models.DateTimeField(auto_now_add=True)
-    link = models.ManyToManyField(Category, through='PostCategory')
+    category = models.ManyToManyField(Category, through='PostCategory')
     title_news = models.CharField(max_length=255, blank=False)
     text_news = models.TextField(blank=False)
     rate_news = models.IntegerField(default=0)
@@ -62,10 +67,13 @@ class Post(models.Model):
         self.rate_news -= 1
         self.save()
 
+    def get_absolute_url(self):
+        return f'/news/{self.id}'
+
 class PostCategory(models.Model):
 
-    link_1 = models.ForeignKey('Post', on_delete=models.CASCADE)
-    link_2 = models.ForeignKey('Category', on_delete=models.CASCADE)
+    post = models.ForeignKey('Post', on_delete=models.CASCADE)
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
 
 
 class Comment(models.Model):

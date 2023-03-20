@@ -1,8 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import TemplateView, CreateView, UpdateView
+from django.views.generic import TemplateView, CreateView, UpdateView, ListView
 from .forms import NewsForm
-from .models import Post
+from .models import Post,Category
+from django.shortcuts import get_object_or_404, redirect
 from django.shortcuts import render, reverse, redirect
+from django.contrib.auth.decorators import login_required
 from django.views import View
 from django.core.mail import send_mail
 from datetime import datetime
@@ -31,6 +34,34 @@ class NewsUpdate(UpdateView):
 
 class ProtectedView(LoginRequiredMixin, TemplateView):
     template_name = 'index.html'
+
+class CategoryListView(ListView):
+    model = Post
+    template_name = 'news/category_list.html'
+    context_object_name = 'category_news_list'
+
+    def get_queryset(self):
+        self.category = get_object_or_404(Category, id=self.kwargs['pk'] )
+        queryset = Post.objects.filter(Category=self.category).order_by('-date')
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_not_subscriber'] = self.request.user not in self.category.subscribers.all()
+        context['category'] = self.category
+        return context
+
+@login_required
+def subscribe(request, pk):
+    user = request.user
+    category = Category.objects.get(id=pk)
+    category.subscribers.add(user)
+
+    message = 'Вы успешно подписались на рассылку новостей категории'
+    return render(request, 'news/subscribes.html', {'category': category, 'message': message} )
+
+
+
 
 
 #class AppointmentView(View):
