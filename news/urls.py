@@ -8,6 +8,6 @@ urlpatterns = [
 
    path('create/', NewsCreate.as_view(), name='news_create'),
    path('<int:pk>/update/', NewsUpdate.as_view(), name='news_update'),
-   path('categories/<int:pk>', CategoryListView.as_view(), name = 'category_list'),
+   path('categories/<int:pk>', CategoryListView, name = 'category_list'),
    path('categories/<int:pk>/subscribe', subscribe, name = 'subscribe'),
     ]

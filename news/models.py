@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 from django.db.models import Sum
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 class Author(models.Model):
@@ -35,6 +36,19 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+class News(models.Model):
+    name = models.CharField(max_length=50, unique=True,)
+    description = models.TextField()
+    #quantity = models.IntegerField(validators=[MinValueValidator(0)],)
+    category = models.ForeignKey(to='Category', on_delete=models.CASCADE, related_name='news',)
+    #price = models.FloatField(validators=[MinValueValidator(0.0)],)
+
+    def __str__(self):
+        return f'{self.name.title()}: {self.description[:20]}'
+
+    def get_absolute_url(self):
+        return reverse('news_update', args=[str(self.id)])
 
 class Post(models.Model):
 
