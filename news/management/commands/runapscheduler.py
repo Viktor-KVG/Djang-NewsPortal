@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 def my_job():
     today = datetime.datetime.now()
     last_week = today - datetime.timedelta(days=7)
-    posts = Post.objects.filter(data__gte = last_week)
+    posts = Post.objects.filter(created_at__gte = last_week)
     categories = set(posts.values_list('category__name', Flat = True))
     subscribers = set(Category.objects.filter(name__in = categories).values_list('subscribers__email', Flat=True))
     html_content = render_to_string(

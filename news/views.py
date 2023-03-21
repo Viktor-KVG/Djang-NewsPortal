@@ -77,7 +77,7 @@ class NewsUpdate(UpdateView):
 class ProtectedView(LoginRequiredMixin, TemplateView):
     template_name = 'index.html'
 
-class CategoryListView(Post):
+class CategoryListView(ListView):
     model = Post
     template_name = 'news/category_list.html'
     context_object_name = 'category_news_list'
@@ -100,7 +100,7 @@ def subscribe(request, pk):
     category.subscribers.add(user)
 
     message = 'Вы успешно подписались на рассылку новостей категории'
-    return render(request, 'news/subscribes.html', {'category': category, 'message': message} )
+    return render(request, 'news/subscribe.html', {'category': category, 'message': message} )
 
 
 

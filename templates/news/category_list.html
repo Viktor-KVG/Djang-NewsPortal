@@ -13,17 +13,17 @@
 <hr>
 
 <ul class="list-group list-group-flush">
-    {% for newspost in category_news_list %}
+    {% for post in category_news_list %}
         <li class="list-group-item">
-            <small class="fw-bold">{{newspost.date | date:'d M Y'}} </small>
-            <a href="{% url 'post_details' newspost.id %}">{{newspost.title}}</a>
-            <small class="text-muted">(автор: {{newspost.one_to_many_post}})</small><br>
+            <small class="fw-bold">{{post.date | date:'d M Y'}} </small>
+            <a href="{% url 'post_details' news.id %}">{{post.title}}</a>
+            <small class="text-muted">(автор: {{post.one_to_many_post}})</small><br>
             <small class="fw-bold">категории:
-                {% for category in newspost.category.all %}
+                {% for category in post.category.all %}
                     <a href="{% url 'category_list' category.id %}">{{category}}</a>
                 {% endfor %}
             </small>
-            <p> {{newspost.text|truncatechars: 210}}</p>
+            <p> {{post.text|truncatechars: 210}}</p>
         </li>
     {% endfor %}
 </ul>
