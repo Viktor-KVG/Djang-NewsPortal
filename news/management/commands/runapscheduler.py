@@ -23,14 +23,7 @@ def my_job():
     posts = Post.objects.filter(created_at__gte = last_week)
     categories = set(posts.values_list('category__name', Flat = True))
     subscribers = set(Category.objects.filter(name__in = categories).values_list('subscribers__email', Flat=True))
-    html_content = render_to_string(
-        'daily_post.html',
-        {
-            'link':settings.SITE_URL,
-            'posts':posts,
-
-        }
-    )
+    html_content = render_to_string('daily_post.html',{'link':settings.SITE_URL,'posts':posts,})
     msg = EmailMultiAlternatives(
         subject='Статьи за неделю',
         body = '',

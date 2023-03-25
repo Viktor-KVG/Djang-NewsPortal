@@ -14,8 +14,5 @@ class Migration(migrations.Migration):
             model_name='category',
             name='name',
         ),
-        migrations.RemoveField(
-            model_name='category',
-            name='subscribers',
-        ),
+
     ]

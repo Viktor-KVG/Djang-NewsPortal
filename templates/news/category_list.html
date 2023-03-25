@@ -20,7 +20,7 @@
             <small class="text-muted">(автор: {{post.one_to_many_post}})</small><br>
             <small class="fw-bold">категории:
                 {% for category in post.category.all %}
-                    <a href="{% url 'category_list' category.id %}">{{category}}</a>
+                    <a href="{% url 'category_news_list' category.id %}">{{category}}</a>
                 {% endfor %}
             </small>
             <p> {{post.text|truncatechars: 210}}</p>

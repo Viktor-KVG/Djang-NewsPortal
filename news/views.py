@@ -68,6 +68,11 @@ class NewsCreate(CreateView):
         product = form.save(commit=False)
         product.quantity = 13
         return super().form_valid(form)
+
+    def reation_notis(self):
+        import news.board.views
+
+
 class NewsUpdate(UpdateView):
 
     form_class = NewsForm
@@ -101,6 +106,8 @@ def subscribe(request, pk):
 
     message = 'Вы успешно подписались на рассылку новостей категории'
     return render(request, 'news/subscribe.html', {'category': category, 'message': message} )
+
+
 
 
 
