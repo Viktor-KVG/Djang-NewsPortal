@@ -15,7 +15,11 @@ from django.template.loader import render_to_string
 from django.core.mail import EmailMultiAlternatives
 import logging
 
-
+logger = logging.getLogger('django')
+logger_1 = logging.getLogger('django.request')
+logger_2 = logging.getLogger('django.server')
+logger_3 = logging.getLogger('django.security')
+logger.debug("это инфо логгер", )
 
 #from .models import Appointment
 class NewsCategory(ListView):
@@ -72,10 +76,10 @@ class NewsSearch(CreateView):
     template_name = 'news_search.html'
 
 class NewsCreate(CreateView):
-    logger = logging.getLogger('django')
-    logger_1 = logging.getLogger('django.request')
-    logger_2 = logging.getLogger('django.server')
-    logger_3 = logging.getLogger('django.security')
+#    logger = logging.getLogger('django')
+#    logger_1 = logging.getLogger('django.request')
+ #   logger_2 = logging.getLogger('django.server')
+ #   logger_3 = logging.getLogger('django.security')
     logger.debug("это инфо логгер", )
     if 'ERROR' or 'CRITICAL': exc_info = True
     logger.info("info", exc_info=True)

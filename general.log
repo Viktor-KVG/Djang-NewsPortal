@@ -1,0 +1,573 @@
+2023-04-26 23:44:17,114 INFO info views
+NoneType: None
+2023-04-26 23:44:17,151 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 74, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 82, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:44:17,154 ERROR security views
+2023-04-26 23:44:17,154 ERROR mail views
+2023-04-26 23:44:18,441 INFO info views
+NoneType: None
+2023-04-26 23:44:18,444 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 74, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 82, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:44:18,447 ERROR security views
+2023-04-26 23:44:18,447 ERROR mail views
+2023-04-26 23:44:18,636 INFO Watching for file changes with StatReloader autoreload
+2023-04-26 23:44:38,678 INFO info views
+NoneType: None
+2023-04-26 23:44:38,680 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 74, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 82, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:44:38,683 ERROR security views
+2023-04-26 23:44:38,683 ERROR mail views
+2023-04-26 23:47:29,967 INFO info views
+NoneType: None
+2023-04-26 23:47:29,969 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:47:29,971 ERROR security views
+2023-04-26 23:47:29,972 ERROR mail views
+2023-04-26 23:48:24,694 INFO info views
+NoneType: None
+2023-04-26 23:48:24,697 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:48:24,699 ERROR security views
+2023-04-26 23:48:24,699 ERROR mail views
+2023-04-26 23:50:24,722 INFO info views
+NoneType: None
+2023-04-26 23:50:24,725 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:50:24,727 ERROR security views
+2023-04-26 23:50:24,728 ERROR mail views
+2023-04-26 23:50:25,919 INFO info views
+NoneType: None
+2023-04-26 23:50:25,922 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:50:25,924 ERROR security views
+2023-04-26 23:50:25,925 ERROR mail views
+2023-04-26 23:50:26,111 INFO Watching for file changes with StatReloader autoreload
+2023-04-26 23:50:53,638 INFO info views
+NoneType: None
+2023-04-26 23:50:53,640 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:50:53,643 ERROR security views
+2023-04-26 23:50:53,643 ERROR mail views
+2023-04-26 23:52:54,147 INFO info views
+NoneType: None
+2023-04-26 23:52:54,150 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:52:54,152 ERROR security views
+2023-04-26 23:52:54,153 ERROR mail views
+2023-04-26 23:53:25,809 INFO info views
+NoneType: None
+2023-04-26 23:53:25,811 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:53:25,813 ERROR security views
+2023-04-26 23:53:25,813 ERROR mail views
+2023-04-26 23:53:32,389 INFO info views
+NoneType: None
+2023-04-26 23:53:32,391 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:53:32,393 ERROR security views
+2023-04-26 23:53:32,394 ERROR mail views
+2023-04-26 23:54:06,677 INFO info views
+NoneType: None
+2023-04-26 23:54:06,682 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:54:06,684 ERROR security views
+2023-04-26 23:54:06,685 ERROR mail views
+2023-04-26 23:54:07,826 INFO info views
+NoneType: None
+2023-04-26 23:54:07,829 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:54:07,831 ERROR security views
+2023-04-26 23:54:07,832 ERROR mail views
+2023-04-26 23:54:08,012 INFO Watching for file changes with StatReloader autoreload
+2023-04-26 23:55:59,510 WARNING Not Found: /create log
+2023-04-26 23:56:58,426 INFO C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\NewsPortal\urls.py changed, reloading. autoreload
+2023-04-26 23:56:59,601 INFO info views
+NoneType: None
+2023-04-26 23:56:59,604 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:56:59,606 ERROR security views
+2023-04-26 23:56:59,606 ERROR mail views
+2023-04-26 23:56:59,795 INFO Watching for file changes with StatReloader autoreload
+2023-04-26 23:57:00,314 WARNING Not Found: /create log
+2023-04-26 23:57:01,928 WARNING Not Found: /create log
+2023-04-26 23:57:17,004 WARNING Not Found: /news log
+2023-04-26 23:57:26,213 WARNING Not Found: /pages log
+2023-04-26 23:57:33,272 WARNING Not Found: /accounts log
+2023-04-26 23:57:41,240 WARNING Not Found: /appointments log
+2023-04-26 23:58:38,968 INFO C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\NewsPortal\urls.py changed, reloading. autoreload
+2023-04-26 23:58:40,144 INFO info views
+NoneType: None
+2023-04-26 23:58:40,147 ERROR error views
+Stack (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\core\management\__init__.py", line 398, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\lib\site-packages\django\apps\registry.py", line 124, in populate
+    app_config.ready()
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\apps.py", line 9, in ready
+    import news.signals
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\signals.py", line 9, in <module>
+    from news.views import subscribe
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 78, in <module>
+    class NewsCreate(CreateView):
+  File "C:\Users\user\PycharmProjects\pythonProjectDJ\News\NewsPortal\news\views.py", line 86, in NewsCreate
+    logger_1.error('error', stack_info=True)
+2023-04-26 23:58:40,149 ERROR security views
+2023-04-26 23:58:40,150 ERROR mail views
+2023-04-26 23:58:40,328 INFO Watching for file changes with StatReloader autoreload
+2023-04-26 23:58:46,509 WARNING Not Found: /news/create/assets/favicon.ico log
+2023-04-26 23:58:46,583 WARNING Not Found: /news/create/assets/favicon.ico log
+2023-04-27 00:00:30,283 WARNING Not Found: /about/ log

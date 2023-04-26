@@ -112,7 +112,7 @@ LOGGING = {
         },
 
         'errors': {
-            'level': 'ERROR','CRITICAL'
+            'level': 'ERROR',
             'class': 'logging.FileHandler',
             'formatter': 'error_1',
             'filename': 'errors.log',
