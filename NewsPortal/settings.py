@@ -58,8 +58,104 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'style': '{',
+    'formatters': {
+        'simple': {
+            'format': '%(asctime)s %(levelname)s %(message)s %(pathname)s %(module)s'
+        },
+        'general_1': {
+            'format': '%(asctime)s %(levelname)s %(message)s %(module)s'
+        },
+
+        'error_1': {
+            'format': '%(asctime)s %(levelname)s %(message)s %(pathname)s'
+        },
+
+        'security_1': {
+            'format': '%(asctime)s %(levelname)s %(message)s %(module)s'
+        },
+
+        'server_1': {
+            'format': '%(asctime)s %(levelname)s %(message)s %(module)s'
+        },
+    },
+        'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        },
+    },
+
+
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+
+        'general': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'general_1',
+            'filename': 'general.log',
+        },
+
+        'errors': {
+            'level': 'ERROR','CRITICAL'
+            'class': 'logging.FileHandler',
+            'formatter': 'error_1',
+            'filename': 'errors.log',
+        },
+
+        'security': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'formatter': 'security_1',
+            'filename': 'security.log',
+        },
+
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'server_1',
+        },
+
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console','general'],
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['mail_admins','errors'],
+            'propagate': True,
+        },
+
+        'django.server': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+
+        'django.security': {
+            'handlers': ['security'],
+            'level': 'ERROR',
+            'propagate': True,
+        }
+    }
+}
 ROOT_URLCONF = 'NewsPortal.urls'
 
 TEMPLATES = [
@@ -83,9 +179,16 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+
 WSGI_APPLICATION = 'NewsPortal.wsgi.application'
 
-
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'), # Указываем, куда будем сохранять кэшируемые файлы! Не забываем создать папку cache_files внутри папки с manage.py!
+        'TIMEOUT': 30, # добавляем стандартное время ожидания в минуту (по умолчанию это 5 минут — 300 секунд)
+    }
+}
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -158,4 +261,7 @@ LOGIN_REDIRECT_URL = '/'
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25
 
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
